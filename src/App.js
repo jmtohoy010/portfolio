@@ -55,8 +55,15 @@ const Portfolio = () => {
   const [openCard, setOpenCard] = useState(null);
   const [openExpCard, setOpenExpCard] = useState(null);
   const [eduIndex, setEduIndex] = useState(0);
-  const prevEdu = () => setEduIndex((i) => (i === 0 ? educationData.length - 1 : i - 1));
-  const nextEdu = () => setEduIndex((i) => (i === educationData.length - 1 ? 0 : i + 1));
+  const [slideDirection, setSlideDirection] = useState(null); // 'left' or 'right'
+  const prevEdu = () => {
+    setSlideDirection('left');
+    setEduIndex((i) => (i === 0 ? educationData.length - 1 : i - 1));
+  };
+  const nextEdu = () => {
+    setSlideDirection('right');
+    setEduIndex((i) => (i === educationData.length - 1 ? 0 : i + 1));
+  };
   const handleCardClick = (card) => {
     setOpenCard(openCard === card ? null : card);
   };
@@ -155,7 +162,7 @@ const Portfolio = () => {
           {/* Education Carousel Start */}
           <div className="edu-carousel">
             <button className="edu-arrow left" onClick={prevEdu} aria-label="Previous School">&#8592;</button>
-            <div className="edu-card">
+            <div className={`edu-card${slideDirection === 'left' ? ' slide-in-left' : ''}${slideDirection === 'right' ? ' slide-in-right' : ''}`} key={eduIndex}>
               <img src={educationData[eduIndex].logo} alt={educationData[eduIndex].name + ' logo'} className="edu-logo" />
               <h3>{educationData[eduIndex].name}</h3>
               <p><strong>{educationData[eduIndex].degree}</strong> | {educationData[eduIndex].years}</p>
