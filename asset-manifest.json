@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Ocampo_Portfolio/static/css/main.e23fe3da.css",
+    "main.js": "/Ocampo_Portfolio/static/js/main.9b2ce2e4.js",
+    "static/js/453.ad7768ec.chunk.js": "/Ocampo_Portfolio/static/js/453.ad7768ec.chunk.js",
+    "static/media/tip.jpg": "/Ocampo_Portfolio/static/media/tip.e2e2d7ba735653cc27e2.jpg",
+    "static/media/lems.jpg": "/Ocampo_Portfolio/static/media/lems.7e4c1be747860b737b0b.jpg",
+    "static/media/me.jpg": "/Ocampo_Portfolio/static/media/me.b71cbd26d7cf8bfa494a.jpg",
+    "static/media/apc.jpeg": "/Ocampo_Portfolio/static/media/apc.099ccff641bab677bd0c.jpeg",
+    "index.html": "/Ocampo_Portfolio/index.html",
+    "main.e23fe3da.css.map": "/Ocampo_Portfolio/static/css/main.e23fe3da.css.map",
+    "main.9b2ce2e4.js.map": "/Ocampo_Portfolio/static/js/main.9b2ce2e4.js.map",
+    "453.ad7768ec.chunk.js.map": "/Ocampo_Portfolio/static/js/453.ad7768ec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e23fe3da.css",
+    "static/js/main.9b2ce2e4.js"
+  ]
+}
